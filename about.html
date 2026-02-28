@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+<header
+      class="w-full text-gray-400 bg-gray-900 dark-mode:text-gray-200 dark-mode:bg-gray-800"
+    >
+      <div
+        x-data="{ open: false }"
+        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
+      >
+        <div class="flex flex-row items-center justify-between p-4">
+          <a
+            href="index.html"
+            class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
+          >
+            Pinnacle Learning Institute
+          </a>
+          <button
+            class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
+            @click="open = !open"
+            >
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path
+                x-show="!open"
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                x-show="open"
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 110 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <nav
+          :class="{'flex': open, 'hidden': !open}"
+          class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row"
+        >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200 focus:outline-none"
+            href="about.html"
+            >About</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200 focus:outline-none"
+            href="programs.html"
+            >Programs</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200 focus:outline-none"
+            href="teachers.html"
+            >Teachers</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200 focus:outline-none"
+            href="admission.html"
+            >Admissions</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200 focus:outline-none"
+            href="blog.html"
+            >Blog</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200 focus:outline-none"
+            href="contact.html"
+            >Contact Us</a
+          >
+        </nav>
+      </div>
+    </header> 
+
+    <section class="bg-[#0B1F3A] text-white py-20">
+        <div class="max-w-5xl mx-auto text-center px-6">
+            <h2 class="text-4xl font-bold mb-4">
+                About <span class="text-orange-500">Pinnacle Learning Institute</span>
+            </h2>
+            <p class="text-lg text-gray-300">
+                We are committed to excellence, innovation, and integrity in everything we do.
+                Our goal is to create impact through professional services and modern technology.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            
+            <div>
+                <h3 class="text-3xl font-bold text-[#0B1F3A] mb-4 border-l-4 border-orange-500 pl-4">
+                    Our History
+                </h3>
+                <p class="mb-4 text-gray-600 leading-relaxed">
+                    Founded in 2010, our institution began with a simple vision — to provide
+                    high-quality services supported by strong ethical values and innovation.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Over the years, we have grown into a trusted organization serving thousands
+                    of clients. Through dedication and teamwork, we continue to expand our
+                    impact across the region.
+                </p>
+            </div>
+
+            <div>
+                <img src="erika-fletcher-MZxqc6n9qCw-unsplash.jpg"
+                     class="rounded-xl shadow-lg" alt="History Image">
+            </div>
+
+        </div>
+    </section>
+    <section class="py-16 bg-orange-50">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold text-[#0B1F3A] mb-6">
+                Our <span class="text-orange-500">Mission</span>
+            </h3>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Our mission is to deliver exceptional services through innovation,
+                professionalism, and client-centered solutions. We aim to empower
+                communities and organizations by providing reliable and efficient systems
+                that enhance performance and growth.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold text-[#0B1F3A] mb-6">
+                Our <span class="text-orange-500">Vision</span>
+            </h3>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                To become a leading and trusted institution recognized for excellence,
+                innovation, and integrity. We envision a future where technology and
+                expertise combine to create sustainable solutions that transform lives.
+            </p>
+        </div>
+    </section>
+
+    <!-- CORE VALUES SECTION -->
+    <section class="py-16 bg-[#0B1F3A] text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-12">
+                Our Core Values
+            </h3>
+
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white text-[#0B1F3A] p-8 rounded-xl shadow-lg hover:scale-105 transition duration-300">
+                    <h4 class="text-xl font-bold mb-3 text-orange-500">Integrity</h4>
+                    <p>We uphold honesty, transparency, and accountability in all operations.</p>
+                </div>
+
+                <div class="bg-white text-[#0B1F3A] p-8 rounded-xl shadow-lg hover:scale-105 transition duration-300">
+                    <h4 class="text-xl font-bold mb-3 text-orange-500">Innovation</h4>
+                    <p>We embrace modern solutions to improve efficiency and service delivery.</p>
+                </div>
+
+                <div class="bg-white text-[#0B1F3A] p-8 rounded-xl shadow-lg hover:scale-105 transition duration-300">
+                    <h4 class="text-xl font-bold mb-3 text-orange-500">Excellence</h4>
+                    <p>We strive for high standards and continuous improvement in everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-gray-400 py-12 px-6 md:px-20">
+  <div class="grid md:grid-cols-3 gap-8">
+    <div>
+      <h4 class="text-white font-semibold mb-3">About Us</h4>
+      <p>Providing quality education for over 20 years.</p>
+    </div>
+
+    <div>
+      <h4 class="text-white font-semibold mb-3">Contact</h4>
+      <p>Email: info@school.com</p>
+      <p>Phone: +254 700 000000</p>
+    </div>
+
+    <div>
+      <h4 class="text-white font-semibold mb-3">Follow Us</h4>
+      <p>Facebook | Instagram | Twitter</p>
+    </div>
+  </div>
+
+  <div class="text-center mt-10 border-t border-gray-700 pt-6">
+    © 2026 Education Website. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>

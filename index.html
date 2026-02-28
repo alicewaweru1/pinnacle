@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinnacle Learning Institute</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-100">
+ <header
+      class="w-full text-gray-400 bg-gray-900 dark-mode:text-gray-200 dark-mode:bg-gray-800"
+    >
+      <div
+        x-data="{ open: false }"
+        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
+      >
+        <div class="flex flex-row items-center justify-between p-4">
+          <a
+            href="index.html"
+            class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
+          >
+            Pinnacle Learning Institute
+          </a>
+          <button
+            class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
+            @click="open = !open"
+            >
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path
+                x-show="!open"
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                x-show="open"
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 110 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <nav
+          :class="{'flex': open, 'hidden': !open}"
+          class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row"
+        >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200 focus:outline-none"
+            href="about.html"
+            >About</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200 focus:outline-none"
+            href="programs.html"
+            >Programs</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200 focus:outline-none"
+            href="teachers.html"
+            >Teachers</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200 focus:outline-none"
+            href="admission.html"
+            >Admissions</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200 focus:outline-none"
+            href="blog.html"
+            >Blog</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200 focus:outline-none"
+            href="contact.html"
+            >Contact Us</a
+          >
+        </nav>
+      </div>
+    </header> 
+            
+<section class="relative h-screen bg-cover bg-center flex items-center justify-center text-center"
+style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644');">
+
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+  <div class="relative z-10 text-white px-6">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+      Empowering Future Leaders
+    </h1>
+    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+      We provide quality education that shapes tomorrow’s innovators and professionals.
+    </p>
+
+    <div class="space-x-4">
+      <a href="#" class="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-lg font-semibold">
+        Apply Now
+      </a>
+      <a href="#" class="bg-white text-gray-800 hover:bg-gray-200 px-6 py-3 rounded-lg font-semibold">
+        Explore Programs
+      </a>
+    </div>
+  </div>
+</section>
+<section class="py-20 px-6 md:px-20 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-12">Our Programs</h2>
+
+  <div class="grid md:grid-cols-4 gap-8">
+    <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-3">Information Technology</h3>
+      <p class="text-gray-600">Learn coding, networking and cybersecurity skills.</p>
+    </div>
+
+    <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-3">Business</h3>
+      <p class="text-gray-600">Develop entrepreneurship and management expertise.</p>
+    </div>
+
+    <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-3">Health Sciences</h3>
+      <p class="text-gray-600">Train for careers in healthcare and medical services.</p>
+    </div>
+
+    <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-3">Media & Communication</h3>
+      <p class="text-gray-600">Master journalism and digital media creation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 px-6 md:px-20 bg-gray-100 text-center">
+  <h2 class="text-3xl font-bold mb-12">Meet Our Teachers</h2>
+
+  <div class="grid md:grid-cols-3 gap-10 justify-center">
+    <div class="bg-white p-6 rounded-xl shadow text-center mx-auto">
+      <img src="images/icons8-team-FcLyt7lW5wg-unsplash.jpg"
+           class="w-full h-60 object-cover rounded-lg mb-4">
+      <h4 class="text-xl font-semibold">Prof. Amelia Davenport</h4>
+      <p class="text-gray-600 mb-4">IT Lecturer</p>
+      <button class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg">
+        View Profile
+      </button>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow text-center mx-auto">
+      <img src="dr-terrence-underwood-Io0eEAfSMjY-unsplash.jpg"
+           class="w-full h-60 object-cover rounded-lg mb-4">
+      <h4 class="text-xl font-semibold">Prof. Jonathan Kensington</h4>
+      <p class="text-gray-600 mb-4">Business Lecturer</p>
+      <button class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg">
+        View Profile
+      </button>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow text-center mx-auto">
+      <img src="kazi-mizan-ph_p2mWr__g-unsplash.jpg"
+           class="w-full h-60 object-cover rounded-lg mb-4">
+      <h4 class="text-xl font-semibold">Mr. Nathaniel Hawthorne</h4>
+      <p class="text-gray-600 mb-4">Media and Communication</p>
+      <button class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg">
+        View Profile
+      </button>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow text-center mx-auto">
+      <img src="fajar-herlambang-studio-zkac4lVIOGY-unsplash.jpg"
+           class="w-full h-60 object-cover rounded-lg mb-4">
+      <h4 class="text-xl font-semibold">Ms. Fajar Charlotte</h4>
+      <p class="text-gray-600 mb-4">Health Sciences</p>
+      <button class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg">
+        View Profile
+      </button>
+    </div>
+     <div class="bg-white p-6 rounded-xl shadow text-center mx-auto">
+      <img src="library-of-congress-v0jInHBf3XQ-unsplash.jpg"
+           class="w-full h-60 object-cover rounded-lg mb-4">
+      <h4 class="text-xl font-semibold">Dr. Eleanor Whitfield</h4>
+      <p class="text-gray-600 mb-4">Academic Director</p>
+      <button class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg">
+        View Profile
+      </button>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow text-center mx-auto">
+      <img src="mufid-majnun-g8lk5Y35tCc-unsplash.jpg"
+           class="w-full h-60 object-cover rounded-lg mb-4">
+      <h4 class="text-xl font-semibold">Dr. Alexander Whitmore</h4>
+      <p class="text-gray-600 mb-4">Head of Academics</p>
+      <button class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg">
+        View Profile
+      </button>
+    </div>
+  </div>
+  </section>
+<section class="bg-blue-900 text-white py-16">
+  <div class="grid md:grid-cols-3 text-center gap-8">
+    <div>
+      <h2 class="text-4xl font-bold">5,000+</h2>
+      <p>Graduates</p>
+    </div>
+    <div>
+      <h2 class="text-4xl font-bold">50+</h2>
+      <p>Courses</p>
+    </div>
+    <div>
+      <h2 class="text-4xl font-bold">120+</h2>
+      <p>Awards</p>
+    </div>
+  </div>
+</section>
+<section class="py-20 px-6 md:px-20 text-center bg-white">
+  <h2 class="text-3xl font-bold mb-12">What Students Say</h2>
+
+  <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-xl shadow">
+    <p class="text-gray-700 italic mb-4">
+      "This institution transformed my future and career path."
+    </p>
+    <strong>- Student</strong>
+  </div>
+</section>
+<section class="bg-orange-500 text-white text-center py-16">
+  <h2 class="text-3xl font-bold mb-6">Ready to Start Your Journey?</h2>
+  <a href="#" class="bg-white text-orange-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-200">
+    Apply Today
+  </a>
+</section>
+<footer class="bg-gray-900 text-gray-400 py-12 px-6 md:px-20">
+  <div class="grid md:grid-cols-3 gap-8">
+    <div>
+      <h4 class="text-white font-semibold mb-3">About Us</h4>
+      <p>Providing quality education for over 20 years.</p>
+    </div>
+
+    <div>
+      <h4 class="text-white font-semibold mb-3">Contact</h4>
+      <p>Email: info@school.com</p>
+      <p>Phone: +254 700 000000</p>
+    </div>
+
+    <div>
+      <h4 class="text-white font-semibold mb-3">Follow Us</h4>
+      <p>Facebook | Instagram | Twitter</p>
+    </div>
+  </div>
+
+  <div class="text-center mt-10 border-t border-gray-700 pt-6">
+    © 2026 Education Website. All rights reserved.
+  </div>
+</footer>
+
+
+</body>
+</html>
