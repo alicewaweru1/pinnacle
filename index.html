@@ -22,7 +22,7 @@
             Pinnacle Learning Institute
           </a>
           <button
-            class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
+            class="rounded-lg focus:outline-none focus:shadow-outline"
             @click="open = !open"
             >
             <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -42,8 +42,8 @@
           </button>
         </div>
         <nav
-          :class="{'flex': open, 'hidden': !open}"
-          class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row"
+          :class="{'flex': open, : !open}"
+          class="flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row"
         >
           <a
             class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200 focus:outline-none"
@@ -92,11 +92,11 @@ style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a
       We provide quality education that shapes tomorrow’s innovators and professionals.
     </p>
 
-    <div class="space-x-4">
-      <a href="#" class="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-lg font-semibold">
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+      <a href="admission.html" class="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-lg font-semibold">
         Apply Now
       </a>
-      <a href="#" class="bg-white text-gray-800 hover:bg-gray-200 px-6 py-3 rounded-lg font-semibold">
+      <a href="programs.html" class="bg-white text-gray-800 hover:bg-gray-200 px-6 py-3 rounded-lg font-semibold">
         Explore Programs
       </a>
     </div>
