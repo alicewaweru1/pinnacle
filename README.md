@@ -31,9 +31,17 @@ This is a fully responsive educational website for *Pinnacle Learning Institute.
 ## Technologies Used
 - HTML5  
 - Tailwind CSS  
-- Live Server (VS Code) for local development  
+- Live Server (VS Code) for local development
 
----
-
-## Project Structure
-pinnacle-learning-institute/ │ ├─ index.html           # Homepage ├─ programs.html        # Programs page ├─ admissions.html      # Admissions page ├─ blog.html            # Blog page ├─ contact.html         # Contact page ├─ assets/ │   ├─ images/          # Hero, courses, blog images │   ├─ icons/           # Optional icons └─ README.md            # Project documentation
+<p align="center">
+<img scr="images/1.png" width="600">
+<br><br>
+<img scr="images/2.png" width="600">
+<br><br>
+<img scr="images/3.png" width="600">
+<br><br>
+<img scr="images/4.png" width="600">
+<br><br>
+<img scr="images/5.png" width="600">
+</p>
+[visit website](https://alicewaweru1.github.io/pinnacle/)
