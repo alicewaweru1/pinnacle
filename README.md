@@ -1,12 +1,11 @@
-##Education Website
-
+###school website
 # Pinnacle Learning Institute Website
 
 ## Description
 This is a fully responsive educational website for *Pinnacle Learning Institute. It showcases the institute’s programs, admission process, blog, and contact information. Built with **HTML5* and *Tailwind CSS*, it has a clean, professional, and user-friendly interface.
 
 *Key Features:*
-- Clean, modern design using *Navy Blue, **Orange, and **White*
+- Clean, modern design using *Navy Blue (#0B1F3A), **Orange (#F97316), and **White (#FFFFFF)*
 - Multi-page layout: Home, Programs, Admissions, Blog, Contact
 - Interactive application form with personal, academic, and additional information
 - Blog page with education tips, announcements, and sidebar categories
@@ -14,6 +13,9 @@ This is a fully responsive educational website for *Pinnacle Learning Institute.
 - Buttons and hover effects
 - Footer with institute information and copyright
 
+--- 
+
+---
 
 ## Features
 - Responsive Navbar with links to all main pages  
@@ -31,17 +33,10 @@ This is a fully responsive educational website for *Pinnacle Learning Institute.
 ## Technologies Used
 - HTML5  
 - Tailwind CSS  
-- Live Server (VS Code) for local development
+- Live Server (VS Code) for local development  
 
-<p align="center">
-<img scr="images/1.png" width="600">
-<br><br>
-<img scr="images/2.png" width="600">
-<br><br>
-<img scr="images/3.png" width="600">
-<br><br>
-<img scr="images/4.png" width="600">
-<br><br>
-<img scr="images/5.png" width="600">
-</p>
+---
+
+## Project Structure
+pinnacle-learning-institute/ │ ├─ index.html           # Homepage ├─ programs.html        # Programs page ├─ admissions.html      # Admissions page ├─ blog.html            # Blog page ├─ contact.html         # Contact page ├─ assets/ │   ├─ images/          # Hero, courses, blog images │   ├─ icons/           # Optional icons └─ README.md            # Project documentation
 [visit website](https://alicewaweru1.github.io/pinnacle/)
